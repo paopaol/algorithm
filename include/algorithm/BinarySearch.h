@@ -4,8 +4,10 @@
 #include <vector>
 
 namespace algorithm {
+/// O(log n)
 template <typename T>
-inline bool binary_search(const std::vector<T> &list, const T &t) {
+ inline bool binarySearch(const std::vector<T> &list,
+                                              const T &t) {
   size_t low = 0;
   size_t high = list.size() - 1;
 
