@@ -8,3 +8,7 @@ gtest_add_tests(TARGET BinarySearchTest)
 add_executable(SelectionSortTest SelectionSortTest.cpp)
 target_link_libraries(SelectionSortTest gtest gtest_main)
 gtest_add_tests(TARGET SelectionSortTest)
+
+add_executable(FindMaxSquareTest FindMaxSquareTest.cpp)
+target_link_libraries(FindMaxSquareTest gtest gtest_main)
+gtest_add_tests(TARGET FindMaxSquareTest)
