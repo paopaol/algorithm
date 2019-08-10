@@ -2,6 +2,8 @@
 #define __EXAMPLE_H_
 
 #include <algorithm>
+#include <iterator>
+#include <vector>
 
 namespace algorithm {
 inline int findMaxSquare(int w, int h) {
@@ -12,6 +14,14 @@ inline int findMaxSquare(int w, int h) {
     return shortest;
   }
   return findMaxSquare(shortest, longest - shortest);
+}
+
+template <class forwardIt>
+inline int sumArray(forwardIt first, forwardIt last) {
+  if (first == last) {
+    return 0;
+  }
+  return *first + sumArray(++first, last);
 }
 } // namespace algorithm
 
