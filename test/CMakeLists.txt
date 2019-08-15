@@ -16,3 +16,7 @@ gtest_add_tests(TARGET QuickSortTest)
 add_executable(RecursiveTest RecursiveTest.cpp)
 target_link_libraries(RecursiveTest gtest gtest_main)
 gtest_add_tests(TARGET RecursiveTest)
+
+add_executable(DijkstraTest DijkstraTest.cpp)
+target_link_libraries(DijkstraTest gtest gtest_main)
+gtest_add_tests(TARGET DijkstraTest)

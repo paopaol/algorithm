@@ -16,6 +16,7 @@ template <class forwardIt> inline void qsort_(forwardIt left, forwardIt right) {
     // skip less than *pivot
     while (*left_ < *pivot) {
       left_++;
+
     }
     // skip great tahn *pivot
     while (*right_ > *pivot) {

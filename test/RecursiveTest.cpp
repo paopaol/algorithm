@@ -1,5 +1,6 @@
 #include <algorithm/recursive/example.h>
 #include <gtest/gtest.h>
+#include <gtest/internal/gtest-internal.h>
 
 TEST(RecursiveTest, squareIs1680x640_findMaxSquare_maxSquareIs80x80) {
   int maxWidth = algorithm::findMaxSquare(1680, 640);
