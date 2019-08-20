@@ -20,3 +20,7 @@ gtest_add_tests(TARGET RecursiveTest)
 add_executable(DijkstraTest DijkstraTest.cpp)
 target_link_libraries(DijkstraTest gtest gtest_main)
 gtest_add_tests(TARGET DijkstraTest)
+
+add_executable(BreadthFirstSearchTest BreadthFirstSearchTest.cpp)
+target_link_libraries(BreadthFirstSearchTest gtest gtest_main)
+gtest_add_tests(TARGET BreadthFirstSearchTest)
